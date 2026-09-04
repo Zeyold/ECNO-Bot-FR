@@ -43,7 +43,7 @@ export const helpBugReportButton = {
         const githubButton = new ButtonBuilder()
             .setLabel('🐛 Signaler un bug sur GitHub')
             .setStyle(ButtonStyle.Link)
-            .setURL('https://github.com/Zeyold/ECNO-Bot/issues');
+            .setURL('https://github.com/Zeyold/ECNO-Bot-FR/issues');
 
         const bugRow = new ActionRowBuilder().addComponents(githubButton);
 

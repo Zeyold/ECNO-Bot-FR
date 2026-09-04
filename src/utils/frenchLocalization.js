@@ -492,7 +492,7 @@ function patchEmbedFields() {
 export function enableFrenchLocalization() {
   [EmbedBuilder, ModalBuilder].forEach(Class => patchTextMethod(Class, 'setTitle'));
   patchTextMethod(EmbedBuilder, 'setDescription');
-  [ButtonBuilder, TextInputBuilder, StringSelectMenuOptionBuilder].forEach(Class => patchTextMethod(Class, 'setLabel'));
+  [ButtonBuilder, StringSelectMenuOptionBuilder].forEach(Class => patchTextMethod(Class, 'setLabel'));
   [TextInputBuilder, StringSelectMenuBuilder].forEach(Class => patchTextMethod(Class, 'setPlaceholder'));
 
   [

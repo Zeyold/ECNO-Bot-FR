@@ -426,7 +426,7 @@ async function handleWelcomeMessage(selectInteraction, rootInteraction, cfg, gui
             new ActionRowBuilder().addComponents(
                 new TextInputBuilder()
                     .setCustomId('message_input')
-                    .setLabel('Message (variables: {user}, {server}, etc)')
+                    .setLabel('Message de bienvenue')
                     .setStyle(TextInputStyle.Paragraph)
                     .setValue(cfg.welcomeMessage || 'Welcome {user} to {server}!')
                     .setMaxLength(2000)
@@ -629,7 +629,7 @@ async function handleGoodbyeMessage(selectInteraction, rootInteraction, cfg, gui
             new ActionRowBuilder().addComponents(
                 new TextInputBuilder()
                     .setCustomId('message_input')
-                    .setLabel('Message (variables: {user}, {server}, etc)')
+                    .setLabel('Message de départ')
                     .setStyle(TextInputStyle.Paragraph)
                     .setValue(cfg.leaveMessage || '{user.tag} has left the server.')
                     .setMaxLength(2000)

@@ -45,7 +45,7 @@ export function getCounterEmoji(type) {
 }
 
 export function formatCounterChannelName(type, count) {
-  const template = botConfig.counters?.defaults?.channelName || '{name}-{count}';
+  const template = botConfig.counters?.defaults?.channelName || '👥┋ {name} : {count}';
   const baseName = getCounterBaseName(type);
   return template
     .replaceAll('{name}', baseName)
